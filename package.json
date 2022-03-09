@@ -1,0 +1,31 @@
+{
+  "name": "webcam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start": "npm-run-all",
+    "dev": "nodemon --exec npm run start",
+    "start": "node src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "jest": "^27.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "sinon": "^13.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  }
+}
