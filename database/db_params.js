@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config()
 
-export const dbParams = {};
+export let dbParams = {};
 
 if (process.env.DB_URL) {
   dbParams.connectionString = process.env.DB_URL;

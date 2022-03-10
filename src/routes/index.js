@@ -1,9 +1,9 @@
 import express from 'express';
-import picRoutes from './pics.js'
+import { getAllController, test } from '../controllers/index.js';
 
 const router = express.Router();
 
-router.use('/pics', picRoutes);
+router.use('/', getAllController)
 
 
 export default router;
