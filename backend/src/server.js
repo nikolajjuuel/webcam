@@ -13,20 +13,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use(routes)
 
-const PORT = 3000;
-
+const PORT = 8080;
 
 export const start = async () => {
   try {
     await client.connect(() => {
       console.log('postgreSQL db connected ')
     });
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log(`listening on http://localhost:${PORT}`)
     })
   } catch (e) {
     console.error(e);
   }
 }
-
-
